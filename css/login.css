@@ -1,0 +1,360 @@
+/* 公共样式 */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.all{
+    background: url("../img/login/bg_index_01.gif") repeat-x;
+}
+
+
+a:hover{
+    color: #b62929;
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 头部logo */
+header{
+    border-top:5px solid #00a1e9;
+    width: 100%;
+    
+    /* position: absolute; */
+}
+/* header .clouds{
+    position: relative;
+    z-index: 0;
+    height: 190px;
+} */
+
+    
+
+header img{
+    position: absolute; 
+    z-index:1;
+}
+
+header #cloudOne{
+    top:14px;
+
+
+    
+}
+header .cloud{
+  animation-fill-mode: forwards;
+  left: -183px;
+  
+}
+@keyframes run{
+    0%,11%{ 
+       left: -133px;
+    }
+    11%{
+       
+        left: 0px;
+    }
+    100%{
+        left: 1230px;
+    }
+}
+.logo{
+    display: flexbox;
+    vertical-align: middle;
+    
+    height:110px;
+    line-height:110px;
+    margin-left: 50px;
+   
+}
+.logo img{
+    width: 378px;;
+    margin-top: 30px;
+    height: 70px;
+    z-index: 11;
+}
+header audio{
+    position: absolute;
+    top: 95px;
+    left: 937px;
+    outline: none;
+}
+
+
+
+
+/*中间内容 */
+/* section{
+    width:1342px;
+} */
+
+.content{
+    width: 1200px;
+    height: 600px;
+    margin: 60px auto;
+  
+}
+
+.cinRight{
+    position: absolute;
+    top: 35px;
+    right: 147px;
+    width: 380px;
+    height: 373px;
+    border-radius: 35px;
+    background-color: rgba(107, 105, 105, 0.6);
+}
+
+.rightCon{
+    /* position: relative; */
+    width: 340px;
+    height: 427px;
+    margin: 0 auto;
+}
+.rightConAf{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 330px;
+    height: 54px;
+}
+.rightConAf p:nth-child(1){
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 30px;
+}
+#loginMsg{
+    color:red;
+    font-size: 18px;
+    text-align: center;
+    height: 20px;
+    margin-top: 5px;
+}
+.success{
+    color:blue;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 30px;
+}
+
+
+.rightCon input{
+    border: none;
+    width: 268px;
+    height: 46px;
+    margin-left: 10px;
+    font-size: 16px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.rightCon  span{
+    display: inline-block;
+    border-radius: 5px;
+    width: 48px;
+    height: 50px;
+    line-height: 50px;
+    border-right: 1px solid #eae2c8;
+    background-color: #EAE2C8;
+}
+
+.rightCon >p:nth-child(2){
+    margin-top: 25px;
+    /* border: 1px solid #eae2c8; */
+}
+.rightCon p:nth-child(2) span{
+   display:flexbox;
+   text-align: center;
+   vertical-align: middle;
+}
+.rightCon p:nth-child(2) span img{
+    margin-top: 15px;
+    /* align-self: center; */
+    margin: 0 auto;
+    padding: 11px;
+}
+
+.rightCon p:nth-child(2) span{
+    display:flexbox;
+    text-align: center;
+    vertical-align:middle;
+ }
+ .rightCon p:nth-child(3) span img{
+    margin: 0 auto;
+    padding: 11px;
+}
+
+ .rightCon p:nth-child(3) span{
+    display:flexbox;
+    text-align:center;
+    vertical-align:middle;
+ }
+  
+.rightCon p:nth-child(3){
+    margin-top: 25px;
+    /* border: 1px solid #eae2c8; */
+}
+
+.Plink{
+    width: 326px;
+    height: 51px;
+}
+.Plink a{
+  color:white;
+  text-decoration: underline;
+  padding: 0 20px;
+ 
+}
+#img_link{
+    display: flex;
+    justify-content: space-between;
+    width: 227px;
+}
+#img_link a{
+    cursor: pointer;
+    display: block;
+    width: 34px;
+    height: 34px;
+    background: url(../img/login/un_login_third.png) no-repeat  ;
+
+    
+}
+ 
+
+
+
+
+button{
+    margin: 10px 0px 5px;
+    width: 334px;
+    height: 45px;
+    background-color: #ffe751;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+/* 新登录页 */
+section{
+    width: 1300px;
+    margin: 0 auto;
+}
+.bg_content{
+    position: relative;
+    width: 100%;
+    /* background-color: #60b1e6; */
+    height: 400px;
+    margin: 40px 0px;
+}
+
+.bg_nb{
+    
+    top: -20px;
+    left: 25px;
+}
+.bg_nb .lunbo{
+    width: 1300px;
+    height: 440px;
+    position: relative;
+    overflow: hidden;
+}
+.bg_nb .lunbo ul {
+    width: 7800px;
+    height: 440px;
+    position: absolute;
+  
+}
+.bg_nb .lunbo ul li{
+    float: left;
+    width: 1300px;
+    height: 440px;
+    /* opacity: 0.8;  */
+}
+.bg_nb .lunbo .left{
+    position: absolute;
+    top: 178px;
+    left: 2px;
+    width: 73px;
+    height: 73px;
+}
+
+.bg_nb .lunbo div img{
+  
+    width: 73px;
+    height: 73px;
+}
+.bg_nb .lunbo .right{
+    position: absolute;
+    top: 178px;
+    left:1212px;
+    width: 73px;
+    height: 73px;
+}
+.bg_nb p{
+        margin: 5px auto -5px;
+}
+
+
+/* 底部内容 */
+footer{
+    width: 100%;
+}
+.fContent{
+    height: 72px;
+    padding: 20px 0;
+}
+
+.fList a{
+    font-size: 16px;
+    line-height: 24px;
+    color:#868686;
+    margin-right: 30px;
+}
+
+.footerCopy span,a{
+    line-height: 24px;
+    font-size: 14px;
+    color: #868686;
+}
+
+.listLink a{
+    display: inline-block;
+    margin-right: 15px;
+
+}
+.footerCopy  span:hover{
+  color: #54a7ff;
+}
+
+.footerCopy  a:hover{
+    color:#54a7ff;
+  }
+.footerCopy .fList{
+    width: 829px;
+    margin: 0 auto;
+}
+.footerCopy .bottom{
+    width: 387px;
+    margin: 0 auto;
+}

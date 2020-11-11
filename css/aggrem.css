@@ -1,0 +1,170 @@
+/* 头部 */
+header{
+    width:100%;
+    min-width: 1342px;
+    height: 60px;
+    background-color: #60b1e6;
+}
+
+.h_content{
+    position: relative;
+    height: 60px;
+}
+
+.h_content img{
+    position: absolute;
+    top:50%;
+    margin-top: -20px;
+    margin-left: 30px;
+   height: 40px;
+}
+
+.nav_list li{
+    line-height: 60px;
+    float: left;
+    margin-right:20px ;
+}
+
+.nav_list li>a{
+color: white;
+}
+.username{
+    position: relative;
+}
+.username:hover .username_list{
+  display: block;
+}
+
+.username_list{
+    display: none;
+    padding-left: 10px;
+    position: absolute;
+    left: -20px;
+    width: 90px;
+    background-color:rgba(100, 98, 98, 0.527);
+    color:white;
+    z-index: 999;
+}
+
+/* 内容 */
+section{
+    width: 1342px;
+    min-width: 1342px;
+}
+
+.box{
+    width:1000px;
+    padding-top:50px;
+    margin:0 auto;
+}
+
+.box>h2{
+    text-align:center;
+    margin: 30px 0px;
+} 
+
+.box span{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0  8px 0;
+}
+
+#span_pt{
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.p_btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#btn{
+width: 180px;
+margin: 50px auto;
+height: 60px;
+border: none;
+background-color: #60b1e6;
+font-size:24px;
+color: white;
+
+}
+
+/* 底部 */
+footer{
+   
+    width: 100%;
+    height: 200px;
+    min-width: 1342px;
+    background-image: url(../img/option_bg.jpg);
+    /* margin-bottom: -20px; */
+}
+
+.f_left{
+    width: 70%;
+    height:200px ;
+   
+}
+.f_left dl:first-child{
+    margin-left:100px;
+}
+
+.f_left dl{
+    display: inline-block;
+    margin:20px 0 0 80px;
+}
+
+.f_left dt{
+    font-size: 16px;
+    color:rgb(194, 194, 194);
+    margin-bottom: 10px;
+}
+
+.f_left dt:hover{
+    color:white;
+}
+
+.f_left dd{
+    font-size: 12px;
+    padding: 4px 5px;
+}
+
+.f_left dd>a{
+    color:rgb(194, 194, 194);
+}
+
+.f_left dd>a:hover{
+    color:white;
+}
+
+.f_right{
+    width:30%;
+    height:200px;
+}
+
+.f_right_box{
+   height:170px;
+   text-align: center;
+   margin-top:15px;
+   border-left:2px solid rgb(194, 194, 194);
+}
+
+.f_right_box p{
+    color: white;
+    font-size: 14px;
+}
+
+.f_right_box p img{
+    width:120px;
+}
+
+
+.f_right_box span{
+    font-size: 12px;
+    color: white;
+}

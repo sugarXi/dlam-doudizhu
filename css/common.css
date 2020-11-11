@@ -1,0 +1,26 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.fr{
+    float: right;
+}
+
+.fl{
+    float: left;
+}
+
+.w{
+    width: 1342px;
+    min-width: 1342px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}

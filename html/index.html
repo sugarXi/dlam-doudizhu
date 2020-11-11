@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哆啦a梦斗地主——首页</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+   <script src="../js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <!-- 1.头部 -->
+    <header>
+     <!--头部导航 -->
+     <div class="h_content  w">
+         <!-- logo -->
+         <h1 class="fl"> <a href="javascript:void(0)"><img src="../img/logo-1.png" alt=""></a></h1>
+     
+       <!-- 列表 -->
+       <ul class="nav_list fr">
+            <li>欢迎</li>
+            <li class="username"><a id="wellcome" href="javascript:void(0)"></a>
+                <div class="username_list"> 
+                      <ul>
+                        <li>个人中心</li>
+                        <li>游戏记录</li>
+                        <li>修改资料</li>
+                      </ul>
+                </div>
+            
+            </li>
+           
+            <li>退出登录</li>
+          
+       </ul>
+    </div>
+    </header>
+
+
+    <!-- 2.内容 -->
+    <section>
+        <div class="w">
+        <!-- 大图区 -->
+         <div class="sec_left fl"> 
+            <div class="box" >
+                <canvas id="canvas" width="600px" height="800px"></canvas>
+            </div>
+         </div>
+         
+        <!-- 游戏选择区 -->
+         <div class="sec_right fr">
+              <div class="sec_head">
+                <div class="c deta_top">
+                      <p>
+                          <h2 id="h2Title" >选择游戏模式</h2>
+                      </p>
+                </div>
+
+                  <div class="c deta_bottom" id="deta_bottom">
+                      <form id="form">
+                          <!-- 选择区 -->
+                          <p class="spanBtn" id="spanImg"><i>*</i><label for="">选择头像:</label>
+                              <img src="../img/dx.png" alt="">
+                              <img src="../img/jx.png" alt="">
+                              <img src="../img/ph.png" alt="">
+                              <img src="../img/xf.png" alt="">
+                          </p>
+
+                          <p class="spanBtn" id="spanMs"><i>*</i><label for="">游戏模式:</label>
+                            <span>基础模式</span>
+                            <span>闯关模式</span>
+                            <span>PK模式</span>
+                        </p>
+                       
+                            
+                        </p>
+                          <p class="spanBtn" id="spanDd"><i>*</i><label for="">充值积分:</label>
+                              <span>100叮当</span>
+                              <span>500叮当</span>
+                              <span>1000叮当</span>
+                              <span>2000叮当</span>
+                          </p>
+   
+                          <p><i>*</i><label for="">选择大区：</label>
+                            <select>
+                            <option value="请选择">请选择区服</option>
+                            <option value="梦幻之境">梦幻之境</option>
+                            <option value="青青草原">青青草原</option>
+                            <option value="基础模式">基础模式</option>
+                        </select>
+    
+                         </p>
+                          <p><input type="checkbox" id="checkbox" onclick="checkStart()"><span>我同意<a class="service" href="javascript:void(0)">斗地主服务条款</a></span></p>
+                    
+                          <!-- 按钮区/协议条款 -->
+                          <button disabled="disabled" type="button" id="startGame">开始游戏</button><br>
+                          
+                          <!-- 提示文字 -->
+                          <p id="ts">
+                              <span>温馨提示：</span><br/>
+                              <span>1、 若有疑问，可以尝试点击 充值FAQ 或联系客服；</span><br/>
+                              <span>2、 如果您支付失败可通过订单查询重新提交您的订单。</span>
+                          </p>
+  
+  
+                      </form>
+  
+                </div>
+              </div>
+
+             
+         </div>
+    </div>
+    </section>
+
+    <!-- 浮窗 -->
+    <div id="cs_box">
+      <span class="cs_title">在线咨询</span>
+      <span class="cs_close">x</span>
+      <div class="cs_img"><img src="../img/login/01 (1).jpg" style="height: 100px; width: 100px;"></div>
+      <span class="cs_info">有什么可以帮到你</span>
+      <div class="cs_btn">点击咨询</div>
+  </div>
+  
+    <!-- 3.底部 -->
+    <footer>
+        <div class="w">
+              <!-- 左区内容 -->
+            <div class="f_left fl ">
+                  <dl>
+                      <dt>游戏指南</dt>
+                        <dd><a href="javascript:void(0)">游戏规则</a></dd>
+                        <dd><a href="javascript:void(0)">用户规范</a></dd>
+                        <dd><a href="javascript:void(0)">游戏拓展</a></dd>
+                        <dd><a href="javascript:void(0)">历史版本</a></dd>
+                        <dd><a href="javascript:void(0)">开发指南</a></dd>
+                  </dl>
+                  <dl>
+                    <dt>合作加盟</dt>
+                      <dd><a href="javascript:void(0)">合作案例</a></dd>
+                      <dd><a href="javascript:void(0)">发展愿景</a></dd>
+                      <dd><a href="javascript:void(0)">市场拓展</a></dd>
+                      <dd><a href="javascript:void(0)">加盟伙伴</a></dd>
+                      <dd><a href="javascript:void(0)">企业参观</a></dd>    
+                </dl>
+
+                <dl>
+                    <dt>关于我们</dt>
+                      <dd><a href="javascript:void(0)">公司地址</a></dd>
+                      <dd><a href="javascript:void(0)">联系方式</a></dd>
+                      <dd><a href="javascript:void(0)">加入我们</a></dd>
+                      <dd><a href="javascript:void(0)">企业邮箱</a></dd>
+                      <dd><a href="javascript:void(0)">企业发展</a></dd>
+                </dl>
+                <dl>
+                    <dt>关于我们</dt>
+                      <dd><a href="javascript:void(0)">公司地址</a></dd>
+                      <dd><a href="javascript:void(0)">联系方式</a></dd>
+                      <dd><a href="javascript:void(0)">加入我们</a></dd>
+                      <dd><a href="javascript:void(0)">企业邮箱</a></dd>
+                      <dd><a href="javascript:void(0)">企业发展</a></dd>
+                </dl>
+                <dl>
+                    <dt>关于我们</dt>
+                      <dd><a href="javascript:void(0)">公司地址</a></dd>
+                      <dd><a href="javascript:void(0)">联系方式</a></dd>
+                      <dd><a href="javascript:void(0)">加入我们</a></dd>
+                      <dd><a href="javascript:void(0)">企业邮箱</a></dd>
+                      <dd><a href="javascript:void(0)">企业发展</a></dd>
+                </dl>
+            </div>
+            <!-- 右区图片 -->
+            <div class="f_right fr">
+                <div class="f_right_box">
+                <p class="f_title">微信公众号</p>
+                <p><img src="../img/下载.png" alt=""></p>
+                    <span>扫一扫</span><br>
+                    <span>了解更多精彩内容</span>
+            </div>
+          </div>
+        </div>
+    </footer>
+   
+    <script>
+
+    </script>
+<script src="../js/index.js"></script>
+<script src="../js/canvas.js"></script>
+</body>
+</html>

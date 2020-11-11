@@ -1,0 +1,701 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background:no-repeat url('../img/bg3.jpg') top center;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+li{
+	list-style: none;
+}
+.bigbox{
+	width: 100%;
+	height: 940px;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.music{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	z-index: 99;
+	top: 30px;
+	left: 50px;
+}
+.music a{
+	width: 60px;
+	height: 60px;
+	display: block;
+	background: no-repeat url(../img/music.png);
+	background-size: 60px 60px;
+}
+.cloud{
+	width: 3840px;
+	display: block;
+	position: absolute;
+	z-index: -1;
+	opacity: 0.9;
+	left: 0px;
+	animation: cloud1-run 160s linear infinite;
+}
+.cloud img{
+	width:1500px;
+	float: left;
+}
+@keyframes cloud1-run{
+	0%{
+		left: 0px;
+	}
+	100%{
+		left: -1920px;
+	}
+}
+.left{
+	width:20%;
+	height: 600px;
+	float: left;
+	/*background: red;*/
+}
+.mid{
+	width:60%;
+	height: 500px;
+	float: left;
+	/*background: blue;*/
+}
+.mid_top{
+	width: 100%;
+	height: 500px;
+	float: left;
+	/*background: #000;*/
+}
+.mid_end{
+	width: 100%;
+	height: 300px;
+	float: left;
+	/*background: #fff;*/
+}
+.right{
+	width:20%;
+	height: 600px;
+	float: right;
+	/*background: yellow;*/
+}
+.left,.mid_end,.right{
+	position: relative;
+}
+.all_poker{
+	width: 125px;
+	height: 175px;
+	margin: 100px auto 0px;
+	position: relative;
+	/*background: #fff;*/
+	border-radius: 8px;
+}
+.all_poker li{
+	border-radius: 8px;
+	position: absolute;
+	z-index: 98;
+}
+.temp_poker{
+	width: 125px;
+	height: 175px;
+	margin: 100px auto 0px;
+	position: relative;
+}
+.back{
+	width:125px;
+	height: 175px;
+	background: url('../img/14.jpg') -87px -225px;
+	position: absolute;
+	z-index: 100;
+}
+.play_1, .play_2, .play_3{
+	width:125px;
+	height: 175px;
+	margin: 20px auto 0px;
+	position: relative;
+	border-radius: 8px;
+}
+.play_2{
+	margin: 0 auto 0;
+	top: 0;
+}
+.play_1 li,.play_2 li,.play_3 li{
+	border-radius: 8px;
+	position: absolute;
+	z-index: 98;
+}
+.get_boss{
+	width: 190px;
+	height: 100px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	/*border: 1px solid red;*/
+	display: none;
+}
+.play_btn{
+	width: 270px;
+	height: 80px;
+	top: 0;
+	text-align: center;
+	position: absolute;
+	z-index: 1;
+	display: none;
+}
+.mid_end .play_btn{
+	width: 300px;
+}
+.mid_end .play_btn .tips{
+	width: 60px;
+}
+.left .play_btn{
+	width: 100px;
+	height: 200px;
+	text-align: center;
+	margin-right: 50px;
+	margin-top: -90px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	display: none;
+}
+.right .play_btn{
+	width: 100px;
+	height: 200px;
+	text-align: center;
+	margin-top: -105px;
+	margin-left: 60px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	display: none;
+}
+.get_boss a,.play_btn a{
+	width: 91px;
+	height: 45px;
+	margin: 10px 0 0 0;
+	display: block;
+	float: left;
+}
+.play_btn .tips{
+	width: 85px;
+	height: 38px;
+	line-height: 38px;
+	display: inline-block;
+	float: left;
+	margin-top: 12px;
+	border-radius: 10px;
+	background-color: orange;
+	color: #fff;
+}
+.get,.play{
+	width: 112px;
+	height: 39px;
+	display: block;
+	background: no-repeat url(../img/按钮.png) -5px -3px;
+}
+.play_btn .play{
+	box-sizing: border-box;
+	background: no-repeat url(../img/按钮.png) -5px -98px;
+}
+.cancel,.pass{
+	width: 112px;
+	height: 39px;
+	display: block;
+	box-sizing: border-box;
+	background: no-repeat url(../img/按钮.png) -100px -3px;
+}
+.pass{
+	background: no-repeat url(../img/按钮.png) -105px -98px;
+}
+.cancel:hover{
+	background: no-repeat url(../img/按钮.png) -100px -48px;
+	animation: flo 0.5s linear 1;
+}
+.get:hover{
+	background: no-repeat url(../img/按钮.png) -5px -48px;
+	animation: flo 0.5s linear 1;
+}
+.play:hover{
+	background: no-repeat url(../img/按钮.png) -4px -142px;
+	animation: flo 0.5s linear 1;
+}
+.pass:hover{
+	background: no-repeat url(../img/按钮.png) -100px -141px;
+	animation: flo 0.5s linear 1;
+}
+@keyframes flo{
+	0%{
+		padding-top:2px;
+	}
+	50%{
+		padding-top:0;
+	}
+	100%{
+		padding-top:2px;
+	}
+}
+.play_1 .selected {
+	left : 20px;
+}
+.play_2 .selected {
+	top : -20px;
+}
+.play_3 .selected {
+	left : -20px;
+}
+.desktop_poker{
+	width: 125px;
+	height: 175px;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 8px;
+}
+.desktop_poker li{
+	position: absolute;
+	border-radius: 8px;
+	z-index: 98;
+}
+.text{
+	width: 130px;
+	height: 54px;
+	position: absolute;
+	background: no-repeat url(../img/no.png);
+	display: none;
+}
+.no1{
+	top: 350px;
+	right:-110px;
+}
+.no2{
+	top: 30px;
+	left:505px;
+}
+.no3{
+	top: 350px;
+	left:-130px;
+}
+.role_1 img{
+	top: 205px;
+	left: -80px;
+}
+.role_2 img{
+	bottom:-130px;
+	left: -30px;
+	top: 60px;
+}
+.role_3 img{
+	top: 210px;
+	right:-80px;
+}
+.role_1 img,.role_2 img,.role_3 img{
+	width: 150px;
+	display: block;
+	position: absolute;
+	z-index: 0;
+	opacity: 0;
+}
+.clock{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	z-index: 999;
+	background: no-repeat url(../img/闹钟.png);
+	background-size: 80px 80px;
+	display: none;
+}
+
+.clock p{
+	width: 80px;
+	height: 80px;
+	display: block;
+	line-height: 85px;
+	text-align: center;
+	font-size: 26px;
+	font-weight: 800;
+	color: black; 
+}
+.clopos1{
+	top: 400px;
+	right:-140px;
+}
+.clopos2{
+	top: 20px;
+	left:400px;
+}
+.clopos3{
+	top: 400px;
+	left:-160px;
+}
+.ident{
+	width: 80px;
+	height: 40px;
+	position: absolute;
+	opacity: 0;
+}
+.idpos1{
+	top:220px;
+	left: 40px;
+}
+.idpos2{
+	top: 60px;
+	left: 20px;
+}
+.idpos3{
+	top:220px;
+	right: 70px;
+}
+.ident{
+	font-size: 26px;
+}
+.idpos1 img,.idpos2 img,.idpos3 img{
+	width: 110px;
+	margin: -50px 0 0 -10px;
+}
+.boom{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	margin: 0 0 0 0;
+	opacity: 0;
+}
+/*.boom video{
+	object-fit: fill;
+	width: 1920px;
+	height: 750px;
+	position: absolute;
+	top: -100px;
+}*/
+.boom img{
+	width: 500px;
+	height: 300px;
+	position: absolute;
+	top: -70px;
+	left: 30%;
+	/*object-fit: fill;*/
+	/*z-index: 999;*/
+}
+.logo{
+	width: 200px;
+	height: 160px;
+	position: absolute;
+	top: 130px;
+	left:-100px;
+	opacity: 0;
+	z-index: 0;
+}
+.boom-role img{
+	width: 1100px;
+	position: absolute;
+	top: 50%;
+	margin: -412px 0 0 0;
+	right: -300px;
+	opacity: 0;
+}
+.trip{
+	width: 500px;
+	height: 339px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin: -280px 0 0 -250px;
+	z-index: 0;
+	/*opacity: 0;*/
+	/*border: 1px solid red;*/
+}
+.trip img{
+	/*display: block;*/
+	width: 500px;
+	position: absolute;
+	opacity: 0;
+	top: 50px;
+}
+.point{
+	width: 150px;
+	height: 60px;
+	position: absolute;
+	display: none;
+}
+.point em{
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	display: block;
+	font-size: 16px;
+	font-style: normal;
+}
+.point span{
+	width: 100px;
+	font-size: 16px;
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+	color: gray;
+}
+.point h1{
+	width: 150px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+}
+.point p{
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	display: block;
+	font-size: 16px;
+	/*background: red;*/
+	/*border:1px solid red;*/
+}
+.point h1:first-child{
+	font-size: 18px;
+}
+
+.poi1{
+	top: 370px;
+	left: 70px;
+}
+.poi2{
+	top:190px;
+	left:20px;
+}
+.poi3{
+	top: 370px;
+	right: 0px;
+}
+
+
+/*=======================开始游戏界面start=========================*/
+/*入场动画start*/
+
+	.bg-box{
+		width:100%;
+		height: 100%;
+		position: absolute;
+		z-index: 9;
+/*		overflow: hidden;
+*/	}
+	.jump{
+	width: 115px;
+height: 40px;
+position: absolute;
+top:87%;
+left: 60%;
+margin:-50px 0 0 -260px;
+z-index: 1110;
+animation: run1 1s linear infinite; 
+animation-delay:11s;
+/*cursor:url(../img/mouse.ico),auto;*/
+background: url('../img/p3.png') no-repeat 100% 100%;
+	}
+
+@keyframes run1{
+	0%{
+		transform: scale(1);
+	}
+	25%{
+		transform: scale(1.2);
+	}
+	50%{
+		transform: scale(1.3);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+	.gif-box{
+		position: absolute;
+		z-index: 11;
+		margin:-200px 0 0 0;
+	}
+	.gif-box img{
+		width:200px;
+			height: 200px;
+			position:absolute;
+			left: -200px;
+			transform:rotateY(180deg);
+			animation: run 5s linear infinite;
+	}
+
+			@keyframes run{
+				0%{
+					left: -200px;
+					opacity: 0.5;
+				}
+				
+				100%{
+					left:400px;
+					opacity: 1;
+
+					
+				}
+				
+				
+			}
+		
+	#rongqi{
+		width:250px;
+		height: 30px;
+		position: absolute;
+		top:76.5%;
+		left: 43%;
+		text-align: center;
+		border:1px solid #000;
+		background: #0000;
+		border-radius:30px;
+		z-index: 1100
+	}
+#progress{
+	width:250px;
+	height: 30px;
+	position: absolute;
+	z-index: 11;
+	border-radius:30px;	
+	margin:0 0 0 0px;
+	background: skyblue;
+		z-index: 1100;
+
+
+}
+#myvideo{
+	position: 	absolute;	
+	top: -30%;
+	z-index: 1000;;
+}
+/*入场动画end*/
+/*=======================开始游戏界面end=========================*/
+
+/* 弹框样式 */
+.box {
+	width: 100px;
+	margin: 0 auto;
+}
+
+.float {
+	width: 100%;
+	min-height: 1000px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.7);
+	display: none;
+	z-index: 1000;
+}
+
+.tanBox1 {
+	width: 500px;
+	min-height: 260px;
+	border: 5px solid #04B4ED;
+	margin: 120px auto;
+	background: url(../img/dlambg1.jpg) no-repeat;
+	background-color: #fff;
+	background-size: 100%;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.tanTop {
+	width: 15px;
+	height: 20px;
+	font-size: 20px;
+	text-align: center;
+	float: right;
+	margin: 2px;
+	line-height: 20px;
+	border: 1px solid #04B4ED;
+	cursor: pointer;
+	font-weight: bolder;
+	color: white;
+}
+
+.tanText {
+	width: 84%;
+	height: 70%;
+	margin: 8%;
+	position: absolute;
+	top: 128px;
+	border: brown 1px solid;
+	text-align: center;
+	border-radius: 8%;
+	font-size: 26px;
+	overflow: hidden;
+}
+
+/*结算页样式*/
+.gameover{
+	width: 700px;
+	height: 340px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 99;
+	transform: translate(-50%,-50%);
+	background: url("../img/over_bg.png") no-repeat;
+	background-size: 100% 100%;
+	background-color: rgba(0,92,146,.5);
+	display: none;
+}
+.over_wrap{
+	height: 65px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.over_wrap span{
+	flex: 1;
+	font-weight: bold;
+	font-size: 22px;
+	color: #fff;
+	letter-spacing: 2px;
+}
+.player_wrap{
+	display: flex;
+	height: 60px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.player_wrap li{
+	flex: 1;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+}
+.player_wrap li:last-child{
+	color: orange;
+}
+.again{
+	width: 130px;
+	height: 40px;
+	margin: 30px auto;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 10px;
+	background-color: orange;
+	color: #fff;
+	font-size: 18px;
+	cursor: pointer;
+}
+.hidden{
+	position: absolute;
+	right: 10px;
+	top: 0;
+	font-size: 25px;
+	color: #fff;
+	cursor: pointer;
+}
+
+

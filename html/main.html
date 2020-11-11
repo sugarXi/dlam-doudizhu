@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>斗地主</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../js/game.js"></script>
+	<script type="text/javascript" src="../js/animate.js"></script>
+	<script type="text/javascript">
+			$(function(){
+
+				function music(){
+					//暂停或者播放背景音乐
+					let music_btn = document.getElementsByClassName('music')[0].getElementsByTagName('a')[0];
+					let mp3 = document.getElementById('mp3');
+                    mp3.play();
+					let statu = true;
+					music_btn.onclick = function(){
+						// alert(1)
+						if(statu == true){
+							mp3.pause();
+							statu = false;
+							
+						}else{
+							mp3.play();
+							statu = true;
+						}
+					}
+				}
+                $('body').click(function () {
+                    music()
+                })
+			})
+			
+	</script>
+</head>
+<body >
+
+<div class="bigbox">
+	<div class="boom">
+		<!--<video type="mp4" src="" class="video" autoplay="autoplay"></video>-->
+		<img src="../video/8.gif" class="gif" alt="">
+	</div>
+
+	<div class="boom-role">
+
+	</div>
+	<div class="music">
+		<a href="javascript:void(0)"></a>
+	</div>
+	<audio id="mp3" src="../video/theme.mp3"  loop="loop"></audio>
+	<audio id="audio" src="" autoplay></audio>
+	<audio id="audio1" src="" autoplay></audio>
+	<div class="trip"></div>
+	<!-- 背影移动的云 -->
+	<div class="cloud">
+		<img src="../img/云.png">
+		<img src="../img/云.png">
+	</div>
+	<!-- <img src="../bgimg/0.jpg" style="opacity: 1;z-index: -1"> -->
+	<div class="left">
+		<ul class="play_1 play_poker" style="left: 100px;"></ul>
+		<p class="get_boss" style="top:320px;right:-200px;">
+			<a href="javascript:void(0)" class="get"></a>
+			<a href="javascript:void(0)" class="cancel"></a>
+		</p>
+		<p class="play_btn" style="top:320px;right:-200px;">
+			<a href="javascript:void(0)" class="play"></a>
+			<a href="javascript:void(0)" class="pass"></a>
+			<a href="javascript:void(0)" class="tips">提示</a>
+		</p>
+		<p class="text no1">
+			<!-- 不抢 -->
+		</p>
+		<div class="role_1">
+			<!-- <img src="../roleimg/15.png"> -->
+		</div>
+		<div class="clock clopos1">
+			<p></p>	
+		</div>
+		<div class="ident idpos1">
+			<!-- <img src="../img/tie.png"> -->
+		</div>
+		<!-- 积分 -->
+		<div class="point poi1">
+			<h1 class="nickname"><em>昵称：</em><span>静香</span></h1>
+			<h1 class="bot"><em>底分：</em><span>1000</span></h1>
+			<h1 class="total"><em>总分：</em><span>1000</span></h1>
+
+		</div>
+	</div>
+	<div class="mid">
+		<div class="mid_top">
+			<ul class="all_poker">
+				<!-- <li class="back"></li> -->
+			</ul>
+
+			<ul class="desktop_poker">
+				<!-- 生成桌面牌 -->
+			</ul>
+		</div>
+		<div class="mid_end">
+			<ul class="play_2 play_poker" style="top: 100px;">
+				<!-- <li style="width: 125px; height: 175px; background: url(../img/14.png) -162px -5px;"></li> -->
+			</ul>
+			<p class="get_boss" style="top: 30px;left:500px;width:250px;">
+				<a href="javascript:void(0)" class="get"></a>
+				<a href="javascript:void(0)" class="cancel"></a>
+			</p>
+			<p class="play_btn" style="top: 30px;left:500px;width:250px;">
+				<a href="javascript:void(0)" class="play"></a>
+				<a href="javascript:void(0)" class="pass"></a>
+				<a href="javascript:void(0)" class="tips">提示</a>
+			</p>
+			<p class="text no2">
+				<!-- 不抢 -->
+			</p>
+			<div class="role_2">
+				<!-- <img src="../roleimg/15.png"> -->
+			</div>
+			<div class="clock clopos2">
+				<p></p>
+			</div>
+			<div class="ident idpos2">
+				<!-- <img src="../img/tie.png"> -->
+			</div>
+			<!-- 积分 -->
+			<div class="point poi2">
+				<h1 class="nickname"><em>昵称：</em><span>cc</span></h1>
+				<h1 class="bot"><em>底分：</em><span>1000</span></h1>
+				<h1 class="total"><em>总分：</em><span>1000</span></h1>
+			</div>
+		</div>
+	</div>
+	<div class="right">
+		<ul class="play_3 play_poker" style="right: 130px;"></ul>
+		<p class="get_boss" style="top: 320px;left:-225px;">
+			<a class="get"></a>
+			<a class="cancel"></a>
+		</p>
+		<p class="play_btn" style="top: 320px;left:-225px;">
+			<a href="javascript:void(0)" class="play"></a>
+			<a href="javascript:void(0)" class="pass"></a>
+			<a href="javascript:void(0)" class="tips">提示</a>
+		</p>
+		<p class="text no3">
+			<!-- 不抢 -->
+		</p>
+		<div class="role_3">
+			<!-- <img src="../roleimg/15.png"> -->
+		</div>
+		<div class="clock clopos3">
+			<p></p>	
+		</div>
+		<div class="ident idpos3">
+			<!-- <img src="../img/tie.png"> -->
+		</div>
+		<!-- 积分 -->
+		<div class="point poi3">
+			<h1 class="nickname"><em>昵称：</em><span>cc</span></h1>
+			<h1 class="bot"><em>底分：</em><span>1000</span></h1>
+			<h1 class="total"><em>总分：</em><span>1000</span></h1>
+		</div>
+	</div>
+</div>
+
+<!--弹框-->
+<!-- 弹框显示 -->
+<div class="float">
+	<div class="tanBox1">
+		<div class="tanTop">
+			<span class="close">×</span>
+		</div>
+		<div class="tanText">
+			<h2></h2>
+		</div>
+		<div></div>
+	</div>
+</div>
+
+
+<!--结算页-->
+<div class="gameover">
+	<div class="over_wrap">
+		<span>玩家姓名</span>
+		<span>胜负</span>
+		<span>成绩</span>
+	</div>
+	<ul class="player_wrap">
+		<li></li>
+		<li></li>
+		<li>0</li>
+	</ul>
+	<ul class="player_wrap">
+		<li></li>
+		<li></li>
+		<li>0</li>
+	</ul>
+	<ul class="player_wrap">
+		<li></li>
+		<li></li>
+		<li>0</li>
+	</ul>
+
+	<div class="again">再来一局</div>
+	<div class="hidden">×</div>
+</div>
+</body>
+</html>
